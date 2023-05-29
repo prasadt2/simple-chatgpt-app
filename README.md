@@ -1,6 +1,6 @@
 # Simple ChatGPT App
 
-This project is a simple ChatGPT-like application that uses the OpenAI API to generate responses to user questions. It uses React for the frontend and FastAPI for the backend.
+This project is a simple ChatGPT-like application that uses the OpenAI API to generate responses to user questions. It uses React for the frontend and Flask for the backend.
 
 ## Prerequisites
 
@@ -62,19 +62,12 @@ Install the required Python dependencies:
 pip install -r requirements.txt
 ```
 
-Set the OpenAI API key as an environment variable:
+Edit the `.env` file located in `./backend` folder and replace the value that appears right after the equals sign with your key:
 
-- On macOS/Linux:
+```
+OPENAI_API_KEY=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
 
-  ```bash
-  export OPENAI_API_KEY=your_api_key_here
-  ```
-
-- On Windows:
-
-  ```bash
-  set OPENAI_API_KEY=your_api_key_here
-  ```
+```
 
 ### Set Up the Frontend
 
@@ -94,13 +87,13 @@ npm install
 
 ### Start the Backend Server
 
-From the `backend` folder, start the FastAPI server:
+From the `backend` folder, start the Flask server:
 
 ```bash
 uvicorn main:app --reload
 ```
 
-The backend server will be running at `http://localhost:8000`.
+The backend server will be running at `http://localhost:5000`.
 
 ### Start the Frontend App
 

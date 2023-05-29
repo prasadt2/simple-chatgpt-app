@@ -1,10 +1,14 @@
+import os
+from dotenv import load_dotenv
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
 import openai
 from flask import Response
 
-# Replace 'your_openai_api_key' with your actual OpenAI API key
-openai.api_key = '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'
+# read OPENAI_API_KEY from .env file and save it in environment variable
+load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
+print("key is", openai.api_key)
 
 app = Flask(__name__)
 CORS(app, support_credentials=True)
