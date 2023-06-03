@@ -94,7 +94,7 @@ From the `backend` folder, start the Flask server:
 python app.py
 ```
 
-The backend server will be running at `http://127.0.0.1:5000`.
+The backend server will be running at `http:/localhost:5000`.
 
 ### Start the Frontend App
 
@@ -104,7 +104,7 @@ From the `frontend` folder, start the React development server:
 npm start
 ```
 
-Now you can visit `http://127.0.0.1:3000` in your browser and start using the Simple ChatGPT app!
+Now you can visit `http://localhost:3000` in your browser and start using the Simple ChatGPT app!
 
 ## License
 
