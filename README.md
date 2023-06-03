@@ -90,10 +90,11 @@ npm install
 From the `backend` folder, start the Flask server:
 
 ```bash
-uvicorn main:app --reload
+# Python version should be >= 3.0
+python app.py
 ```
 
-The backend server will be running at `http://localhost:5000`.
+The backend server will be running at `http://127.0.0.1:5000`.
 
 ### Start the Frontend App
 
@@ -103,9 +104,7 @@ From the `frontend` folder, start the React development server:
 npm start
 ```
 
-The frontend app will be running at `http://localhost:3000`.
-
-Now you can visit `http://localhost:3000` in your browser and start using the Simple ChatGPT app!
+Now you can visit `http://127.0.0.1:3000` in your browser and start using the Simple ChatGPT app!
 
 ## License
 
